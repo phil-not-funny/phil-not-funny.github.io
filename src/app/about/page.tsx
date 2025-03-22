@@ -65,7 +65,7 @@ export default function About() {
                 viewport={{ once: true }}
                 className="absolute !right-20 md:flex hidden flex-row -top-1/2 !h-42 !w-auto z-20"
               >
-                <Image
+                <img
                   src={"/images/about_me_1.jpg"}
                   alt="Picture of me"
                   height={170}
@@ -84,7 +84,7 @@ export default function About() {
                 viewport={{ once: true }}
                 className="absolute !right-12 md:flex hidden flex-row -top-1/2 !h-42 !w-auto z-10 hover:z-30"
               >
-                <Image
+                <img
                   src={"/images/about_me_2.jpg"}
                   alt="Picture of me"
                   height={170}
