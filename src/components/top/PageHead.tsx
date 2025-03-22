@@ -2,7 +2,7 @@
 
 import { PropsWithClassNameAndChildren } from "@/types/ComponentTypes";
 import { motion as m } from "framer-motion";
-import { PropsWithChildren, ReactElement } from "react";
+import { PropsWithChildren } from "react";
 
 interface Props extends PropsWithChildren {
   className?: string;

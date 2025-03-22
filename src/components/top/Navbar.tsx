@@ -1,6 +1,5 @@
 "use client";
 
-import { motion as m } from "framer-motion";
 import React from "react";
 import {
   Navbar,

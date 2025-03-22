@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import PageHeader from "@/components/low/PageHeader";
 import { WithPageHead } from "@/components/top/PageHead";
 import { Typography } from "@/components/Materials";
@@ -7,7 +9,6 @@ import EnlargableImage from "@/components/low/EnlargeableImage";
 import cv from "../../../public/images/CV_Philip_Schrenk.png";
 import { Button } from "@/components/Materials";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
-import Link from "next/link";
 
 export default function Contact() {
   return (

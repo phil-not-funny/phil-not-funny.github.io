@@ -1,6 +1,5 @@
 "use client";
 
-import { IconButton } from "@/components/Materials";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { Dialog, DialogBody } from "@material-tailwind/react";

@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import DecoratedLink from "@/components/low/DecoratedLink";
 import ScrollProgress from "@/components/low/ScrollProgress";
 import { PageHead } from "@/components/top/PageHead";

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion as m, useScroll } from "framer-motion";
-import { PropsWithChildren, useEffect } from "react";
+import { useEffect } from "react";
 
 const ScrollProgress: React.FC = () => {
   const { scrollYProgress } = useScroll();
