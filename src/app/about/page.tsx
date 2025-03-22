@@ -67,7 +67,7 @@ export default function About() {
                 <img
                   src={"/images/about_me_1.jpg"}
                   alt="Picture of me"
-                  className="!w-auto !h-44 rounded-lg shadow-lg -rotate-[8deg]"
+                  className="!h-44 rounded-lg shadow-lg -rotate-[8deg]"
                 />
               </MotionDiv>
               <MotionDiv
@@ -84,7 +84,7 @@ export default function About() {
                 <img
                   src={"/images/about_me_2.jpg"}
                   alt="Picture of me"
-                  className="!w-auto !h-44 rounded-lg !object-cover !object-center shadow-lg rotate-[8deg]"
+                  className="!h-44 rounded-lg !object-cover !object-center shadow-lg rotate-[8deg]"
                 />
               </MotionDiv>
             </Fragment>
