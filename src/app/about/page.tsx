@@ -3,7 +3,6 @@
 import DecoratedLink from "@/components/low/DecoratedLink";
 import ScrollProgress from "@/components/low/ScrollProgress";
 import { PageHead } from "@/components/top/PageHead";
-import Image from "next/image";
 import { MotionDiv } from "@/components/Motion";
 import React, { Fragment } from "react";
 import {
