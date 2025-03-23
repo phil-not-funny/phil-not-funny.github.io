@@ -46,7 +46,7 @@ export default function About() {
               past and ongoing projects and passions. You can find me on
               basically all{" "}
               <DecoratedLink href={"/contact"}>
-                mayor dev platforms
+                major dev platforms
               </DecoratedLink>
               .
             </Fragment>

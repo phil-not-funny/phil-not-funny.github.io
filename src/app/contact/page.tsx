@@ -28,13 +28,8 @@ export default function Contact() {
         <div className="flex lg:flex-row flex-col gap-4 w-full">
           <ContactListItem
             title="E-Mail"
-            username="schrenk.philip@hotmail.com"
+            username="phil-not-funny@outlook.com"
             companyBadge="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1101px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png"
-          />
-          <ContactListItem
-            title="Phone"
-            username="+43 681 10280618"
-            companyBadge="https://static.vecteezy.com/system/resources/thumbnails/016/416/785/small/phone-call-icon-in-black-colors-telephone-signs-illustration-png.png"
           />
         </div>
         <Typography className="col-span-1 font-mono text-center" variant="h4">
