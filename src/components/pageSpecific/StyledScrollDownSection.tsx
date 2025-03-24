@@ -17,7 +17,7 @@ const StyledScrollDownSection: React.FC<StyledScrollDownSectionProps> = ({
   return (
     <Fragment>
       <PageHeader>{title}</PageHeader>
-      <Typography variant="lead" className="text-center">
+      <Typography variant="lead" className="text-center max-w-screen-lg">
         {yap}
       </Typography>
       <div className="m-0 mt-10 flex animate-bounce items-center justify-center rounded-full p-1 text-pink-600">

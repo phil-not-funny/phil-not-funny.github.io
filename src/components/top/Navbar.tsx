@@ -41,21 +41,20 @@ const NavbarWithMegaMenu: React.FC = () => {
 
   return (
     <Navbar className="w-full !rounded-none border-b border-zinc-900 border-b-zinc-800 bg-zinc-900 px-4 py-2 !shadow-none">
-      <div className="mx-auto flex max-w-screen-xl items-center justify-between">
+      <div className="relative mx-auto flex max-w-screen-xl items-center justify-between lg:justify-center">
         <Link
           href="/"
-          className="mr-4 cursor-pointer py-1.5 font-semibold transition-all duration-75 ease-in-out hover:!text-xl hover:uppercase hover:text-pink-600 lg:ml-2"
+          className="lg:absolute lg:left-0 lg:top-0 leading-8 mr-4 cursor-pointer py-1.5 font-semibold transition-all duration-75 ease-in-out hover:!text-xl hover:uppercase hover:text-pink-600 lg:ml-2"
         >
           Proxreal
         </Link>
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden gap-2 lg:flex"></div>
         <IconButton
           variant="text"
           color="blue-gray"
-          className="lg:hidden"
+          className="lg:hidden flex justify-center items-center"
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
