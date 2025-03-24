@@ -20,12 +20,9 @@ export default function About() {
         <StyledScrollDownSection
           title="About"
           yap={
-            <Fragment>
-              This page provides insight into who I am as an individual, while
+            `This page provides insight into who I am as an individual, while
               also showcasing functionality and design of this website and
-              <br />
-              my entirely fictional franchise and company, "Proxreal".
-            </Fragment>
+              my entirely fictional franchise and company, "Proxreal".`
           }
         />
       </PageHead>
