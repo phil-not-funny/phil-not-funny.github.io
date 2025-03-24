@@ -20,7 +20,7 @@ const AboutReadSection: React.FC<AboutReadSectionProps> = ({
   id,
 }) => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center">
+    <div className="flex !min-h-[80vh] sm:min-h-screen w-full flex-col items-center justify-center">
       <PopIn>
         <div className="relative rounded-xl bg-neutral-800 p-10 shadow-lg">
           {extra}
