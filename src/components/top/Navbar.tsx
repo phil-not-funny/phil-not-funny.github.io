@@ -8,24 +8,19 @@ import {
   List,
   ListItem,
 } from "@material-tailwind/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const NavList: React.FC = () => {
   return (
-    <List className="flex-col mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:items-center lg:p-1">
-      <Link href="/" className="font-medium hover:text-pink-600 text-sm">
+    <List className="mb-6 mt-4 flex-col p-0 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:p-1">
+      <Link href="/" className="text-sm font-medium hover:text-pink-600">
         <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
       </Link>
-      <Link href="/about" className="font-medium hover:text-pink-600 text-sm">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          About
-        </ListItem>
+      <Link href="/about" className="text-sm font-medium hover:text-pink-600">
+        <ListItem className="flex items-center gap-2 py-2 pr-4">About</ListItem>
       </Link>
-      <Link href="/contact" className="font-medium hover:text-pink-600 text-sm">
+      <Link href="/contact" className="text-sm font-medium hover:text-pink-600">
         <ListItem className="flex items-center gap-2 py-2 pr-4">
           Contact
         </ListItem>
@@ -40,25 +35,23 @@ const NavbarWithMegaMenu: React.FC = () => {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
+      () => window.innerWidth >= 960 && setOpenNav(false),
     );
   }, []);
 
   return (
-    <Navbar className="w-full px-4 py-2 !shadow-none border-b bg-zinc-900 border-zinc-900 border-b-zinc-800  !rounded-none">
-      <div className="flex items-center justify-between mx-auto max-w-screen-xl">
+    <Navbar className="w-full !rounded-none border-b border-zinc-900 border-b-zinc-800 bg-zinc-900 px-4 py-2 !shadow-none">
+      <div className="mx-auto flex max-w-screen-xl items-center justify-between">
         <Link
           href="/"
-          className="mr-4 font-semibold cursor-pointer py-1.5 lg:ml-2 transition-all ease-in-out duration-75 hover:!text-xl hover:text-pink-600 hover:uppercase"
+          className="mr-4 cursor-pointer py-1.5 font-semibold transition-all duration-75 ease-in-out hover:!text-xl hover:uppercase hover:text-pink-600 lg:ml-2"
         >
           Proxreal
         </Link>
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden gap-2 lg:flex">
-          
-        </div>
+        <div className="hidden gap-2 lg:flex"></div>
         <IconButton
           variant="text"
           color="blue-gray"

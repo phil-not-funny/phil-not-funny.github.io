@@ -38,11 +38,11 @@ const ContactListItem: React.FC<ContactListItemProps> = ({
         <Avatar
           src={avatar}
           alt="avatar"
-          className="rounded-full h-16 w-16"
+          className="h-16 w-16 rounded-full"
           variant="circular"
         />
       )}
-      <div className="flex flex-col justify-center items-start">
+      <div className="flex flex-col items-start justify-center">
         <div className="flex flex-row items-center justify-start space-x-2">
           <Typography variant="h4" className="font-mono">
             {title}
@@ -50,7 +50,7 @@ const ContactListItem: React.FC<ContactListItemProps> = ({
           <Avatar
             src={companyBadge}
             alt="company"
-            className="h-8 w-8 border rounded-full border-neutral-300 bg-white"
+            className="h-8 w-8 rounded-full border border-neutral-300 bg-white"
           />
         </div>
         <Typography variant="paragraph" className="text-neutral-400">
@@ -63,17 +63,17 @@ const ContactListItem: React.FC<ContactListItemProps> = ({
   return (
     <Fragment>
       <div
-        className={`hidden md:flex flex-row items-center gap-4 shadow-md p-4 rounded-lg w-full flex-grow bg-neutral-700 ${className}`}
+        className={`hidden w-full flex-grow flex-row items-center gap-4 rounded-lg bg-neutral-700 p-4 shadow-md md:flex ${className}`}
       >
         {avatar && (
           <Avatar
             src={avatar}
             alt="avatar"
-            className="rounded-full h-16 w-16"
+            className="h-16 w-16 rounded-full"
             variant="circular"
           />
         )}
-        <div className="flex flex-col justify-center items-start">
+        <div className="flex flex-col items-start justify-center">
           <div className="flex flex-row items-center justify-start space-x-2">
             <Typography variant="h4" className="font-mono">
               {title}
@@ -81,7 +81,7 @@ const ContactListItem: React.FC<ContactListItemProps> = ({
             <Avatar
               src={companyBadge}
               alt="company"
-              className="h-8 w-8 border rounded-full border-neutral-300 bg-white"
+              className="h-8 w-8 rounded-full border border-neutral-300 bg-white"
             />
           </div>
           {href ? (
@@ -98,13 +98,13 @@ const ContactListItem: React.FC<ContactListItemProps> = ({
         <Link
           href={href!}
           target="_blank"
-          className={`flex md:hidden flex-row items-center gap-4 shadow-md p-4 rounded-lg w-full flex-grow bg-neutral-700 ${className}`}
+          className={`flex w-full flex-grow flex-row items-center gap-4 rounded-lg bg-neutral-700 p-4 shadow-md md:hidden ${className}`}
         >
           {mobileChild}
         </Link>
       ) : (
         <div
-          className={`flex md:hidden flex-row items-center gap-4 shadow-md p-4 rounded-lg w-full flex-grow bg-neutral-700 ${className}`}
+          className={`flex w-full flex-grow flex-row items-center gap-4 rounded-lg bg-neutral-700 p-4 shadow-md md:hidden ${className}`}
         >
           mobileChild
         </div>

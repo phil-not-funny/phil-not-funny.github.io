@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion as m, useScroll } from "framer-motion";
 import { useEffect } from "react";
@@ -7,12 +7,12 @@ const ScrollProgress: React.FC = () => {
   const { scrollYProgress } = useScroll();
   useEffect(() => {
     console.log(scrollYProgress);
-  }, );
+  });
 
   return (
     <m.div
-    style={{scaleX: scrollYProgress}}
-      className={`bg-pink-600 h-1 fixed top-0 left-0 z-50 w-full`}
+      style={{ scaleX: scrollYProgress }}
+      className={`fixed left-0 top-0 z-50 h-1 w-full bg-pink-600`}
     ></m.div>
   );
 };

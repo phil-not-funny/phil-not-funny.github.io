@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { PropsWithChildren } from "react";
 import { motion as m } from "framer-motion";

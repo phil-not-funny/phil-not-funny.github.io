@@ -28,23 +28,21 @@ const EnlargableImage: React.FC<EnlargableImageProps> = ({
       <Dialog
         open={open}
         handler={handleOpen}
-        className="bg-transparent flex items-center justify-center backdrop-blur-sm w-screen h-screen"
+        className="flex h-screen w-screen items-center justify-center bg-transparent backdrop-blur-sm"
         style={{ maxWidth: "100vw", maxHeight: "100vh" }} // Ensure full viewport coverage
       >
-        <DialogBody className="p-0 flex items-center justify-center">
+        <DialogBody className="flex items-center justify-center p-0">
           <img src={src} alt={alt} className="max-h-screen w-auto rounded-lg" />
-          <div className="absolute top-4 right-4 flex flex-row-reverse gap-2">
+          <div className="absolute right-4 top-4 flex flex-row-reverse gap-2">
             <button
-              className="bg-red-600 transition-all duration-100 ease-in-out text-white text-2xl font-bold bg-opacity-65 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-90"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 bg-opacity-65 text-2xl font-bold text-white transition-all duration-100 ease-in-out hover:bg-opacity-90"
               onClick={handleOpen}
             >
-              <XMarkIcon className="w-6 h-6" />
+              <XMarkIcon className="h-6 w-6" />
             </button>
             <a href="/downloads/CV_Philip_Schrenk.pdf" download>
-              <button
-                className="bg-blue-700 transition-all duration-100 ease-in-out text-white text-2xl font-bold bg-opacity-65 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-90"
-              >
-                <ArrowDownTrayIcon className="w-6 h-6" />
+              <button className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 bg-opacity-65 text-2xl font-bold text-white transition-all duration-100 ease-in-out hover:bg-opacity-90">
+                <ArrowDownTrayIcon className="h-6 w-6" />
               </button>
             </a>
           </div>
@@ -56,7 +54,7 @@ const EnlargableImage: React.FC<EnlargableImageProps> = ({
         width={460}
         height={0}
         priority
-        className={`rounded-sm shadow-md cursor-pointer hover:opacity-85 transition-opacity ${className}`}
+        className={`cursor-pointer rounded-sm shadow-md transition-opacity hover:opacity-85 ${className}`}
         onClick={handleOpen}
       />
     </Fragment>

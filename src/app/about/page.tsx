@@ -34,7 +34,7 @@ export default function About() {
           title={
             <Fragment>
               Some words{" "}
-              <span className="text-pink-600 uppercase">About Me</span>
+              <span className="uppercase text-pink-600">About Me</span>
             </Fragment>
           }
           paragraph={
@@ -62,12 +62,12 @@ export default function About() {
                   scale: { type: "spring", visualDuration: 0.5, bounce: 0.2 },
                 }}
                 viewport={{ once: true }}
-                className="absolute !right-20 md:flex hidden flex-row -top-1/2 !h-42 !w-auto z-20"
+                className="!h-42 absolute !right-20 -top-1/2 z-20 hidden !w-auto flex-row md:flex"
               >
                 <img
                   src={"/images/about_me_1.jpg"}
                   alt="Picture of me"
-                  className="!h-44 rounded-lg shadow-lg -rotate-[8deg]"
+                  className="!h-44 -rotate-[8deg] rounded-lg shadow-lg"
                 />
               </MotionDiv>
               <MotionDiv
@@ -79,12 +79,12 @@ export default function About() {
                   scale: { type: "spring", visualDuration: 0.5, bounce: 0.2 },
                 }}
                 viewport={{ once: true }}
-                className="absolute !right-12 md:flex hidden flex-row -top-1/2 !h-42 !w-auto z-10 hover:z-30"
+                className="!h-42 absolute !right-12 -top-1/2 z-10 hidden !w-auto flex-row hover:z-30 md:flex"
               >
                 <img
                   src={"/images/about_me_2.jpg"}
                   alt="Picture of me"
-                  className="!h-44 rounded-lg !object-cover !object-center shadow-lg rotate-[8deg]"
+                  className="!h-44 rotate-[8deg] rounded-lg !object-cover !object-center shadow-lg"
                 />
               </MotionDiv>
             </Fragment>
@@ -94,7 +94,7 @@ export default function About() {
           title={
             <Fragment>
               About{" "}
-              <span className="text-pink-600 uppercase tracking-wide">
+              <span className="uppercase tracking-wide text-pink-600">
                 This Page
               </span>
             </Fragment>
@@ -105,7 +105,7 @@ export default function About() {
               <a
                 target="_blank"
                 href="https://nextjs.org/"
-                className="hover:underline text-green-400"
+                className="text-green-400 hover:underline"
               >
                 Next.js
               </a>
@@ -113,7 +113,7 @@ export default function About() {
               <a
                 target="_blank"
                 href="https://tailwindcss.com/"
-                className="hover:underline text-teal-400"
+                className="text-teal-400 hover:underline"
               >
                 Tailwind CSS
               </a>
@@ -121,7 +121,7 @@ export default function About() {
               <a
                 target="_blank"
                 href="https://material-tailwind.com/"
-                className="hover:underline text-pink-400"
+                className="text-pink-400 hover:underline"
               >
                 Material Tailwind
               </a>{" "}
@@ -129,7 +129,7 @@ export default function About() {
               <a
                 target="_blank"
                 href="https://motion.dev"
-                className="hover:underline text-yellow-400"
+                className="text-yellow-400 hover:underline"
               >
                 Framer Motion
               </a>
@@ -141,7 +141,7 @@ export default function About() {
               <a
                 target="_blank"
                 href="https://github.com/phil-not-funny/proxreal-homepage-nextjs"
-                className="hover:underline text-slate-500"
+                className="text-slate-500 hover:underline"
               >
                 GitHub
               </a>
@@ -149,7 +149,7 @@ export default function About() {
             </Fragment>
           }
           extra={
-            <div className="absolute right-10 -top-10 md:flex flex-row items-center lg:space-x-6 space-x-1 hidden">
+            <div className="absolute -top-10 right-10 hidden flex-row items-center space-x-1 md:flex lg:space-x-6">
               <AboutReadSectionImageBlobs
                 href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
                 alt="GitHub Repo"
@@ -190,7 +190,7 @@ export default function About() {
           title={
             <Fragment>
               What is{" "}
-              <span className="text-pink-600 uppercase tracking-wide">
+              <span className="uppercase tracking-wide text-pink-600">
                 Proxreal
               </span>
               ?

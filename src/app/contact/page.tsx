@@ -18,14 +18,14 @@ export default function Contact() {
         Here, you'll find several ways to get in touch with me, including links
         to my social media profiles.
       </Typography>
-      <div className="rounded-lg shadow-lg bg-neutral-800 max-w-screen-lg w-full flex flex-col items-center gap-4 my-24 p-4">
+      <div className="my-24 flex w-full max-w-screen-lg flex-col items-center gap-4 rounded-lg bg-neutral-800 p-4 shadow-lg">
         <Typography
-          className="col-span-1 font-mono text-center w-full"
+          className="col-span-1 w-full text-center font-mono"
           variant="h4"
         >
           Contact
         </Typography>
-        <div className="flex lg:flex-row flex-col gap-4 w-full">
+        <div className="flex w-full flex-col gap-4 lg:flex-row">
           <ContactListItem
             title="E-Mail"
             username="phil-not-funny@outlook.com"
@@ -33,10 +33,10 @@ export default function Contact() {
             companyBadge="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1101px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png"
           />
         </div>
-        <Typography className="col-span-1 font-mono text-center" variant="h4">
+        <Typography className="col-span-1 text-center font-mono" variant="h4">
           Social Media
         </Typography>
-        <div className="flex lg:flex-row flex-col gap-4 w-full">
+        <div className="flex w-full flex-col gap-4 lg:flex-row">
           <ContactListItem
             title="GitHub"
             username="phil-not-funny"
@@ -44,7 +44,7 @@ export default function Contact() {
             avatar="https://avatars.githubusercontent.com/u/77935424?v=4"
             companyBadge="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
           />
-          <ContactListItem 
+          <ContactListItem
             title="LinkedIn"
             username="Philip Schrenk"
             companyBadge="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png"
@@ -60,11 +60,18 @@ export default function Contact() {
           />
         </div>
       </div>
-      <Typography variant="h1" className="text-center tracking-wider text-2xl uppercase">
-      View my CV
+      <Typography
+        variant="h1"
+        className="text-center text-2xl uppercase tracking-wider"
+      >
+        View my CV
       </Typography>
       <EnlargableImage src={cv.src} alt="CV" className="mt-6" />
-      <a href="/downloads/CV_Philip_Schrenk.pdf" download><Button className="p-3 mt-2 bg-pink-700 flex items-center gap-3" ><ArrowDownTrayIcon className="h-5 w-5" /> Download</Button></a>
+      <a href="/downloads/CV_Philip_Schrenk.pdf" download>
+        <Button className="mt-2 flex items-center gap-3 bg-pink-700 p-3">
+          <ArrowDownTrayIcon className="h-5 w-5" /> Download
+        </Button>
+      </a>
     </WithPageHead>
   );
 }

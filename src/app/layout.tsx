@@ -27,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-neutral-300 from-zinc-900 to-neutral-900 bg-gradient-to-b`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-gradient-to-b from-zinc-900 to-neutral-900 text-neutral-300 antialiased`}
       >
         <NavbarWithMegaMenu />
-        <main className="min-h-screen h-full relative">{children}</main>
+        <main className="relative h-full min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

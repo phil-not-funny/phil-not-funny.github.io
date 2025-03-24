@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex mt-12 px-10 w-full text-neutral-300 flex-wrap flex-row justify-around items-center gap-y-6 gap-x-12 border-t border-zinc-800 py-6 text-center md:justify-between bg-neutral-900">
+    <footer className="mt-12 flex w-full flex-row flex-wrap items-center justify-around gap-x-12 gap-y-6 border-t border-zinc-800 bg-neutral-900 px-10 py-6 text-center text-neutral-300 md:justify-between">
       <Typography color="white" className="font-normal">
         &copy; 2025 Proxreal, Philip Schrenk
       </Typography>
-      <ul className="flex flex-wrap justify-center items-center gap-y-2 gap-x-8">
+      <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
         <li>
           <Link href="/about">
             <Typography
