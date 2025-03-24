@@ -20,7 +20,7 @@ const StyledScrollDownSection: React.FC<StyledScrollDownSectionProps> = ({
       <Typography variant="lead" className="text-center">
         {yap}
       </Typography>
-      <div className="m-0 mt-10 flex animate-bounce items-center justify-center rounded-full border border-pink-500 p-1 text-pink-600">
+      <div className="m-0 mt-10 flex animate-bounce items-center justify-center rounded-full p-1 text-pink-600">
         <ChevronDoubleDownIcon className="h-7 w-7 p-1" />
         <div className="font-semibold uppercase tracking-wider">
           Scroll Down
