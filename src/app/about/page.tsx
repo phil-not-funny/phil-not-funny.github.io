@@ -140,7 +140,7 @@ export default function About() {
               All of the code is open-source and can be found on{" "}
               <a
                 target="_blank"
-                href="https://github.com/phil-not-funny/proxreal-homepage-nextjs"
+                href="https://github.com/phil-not-funny/phil-not-funny.github.io/actions"
                 className="text-slate-500 hover:underline"
               >
                 GitHub
@@ -154,7 +154,7 @@ export default function About() {
                 href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
                 alt="GitHub Repo"
                 className="right-1/3"
-                additionalHref="https://github.com/phil-not-funny/proxreal-homepage-nextjs"
+                additionalHref="https://github.com/phil-not-funny/phil-not-funny.github.io/actions"
               />
               <div className="realtive flex flex-row -space-x-10">
                 <AboutReadSectionImageBlobs
