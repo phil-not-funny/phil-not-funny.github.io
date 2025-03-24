@@ -1,7 +1,6 @@
 "use client";
 
 import { Avatar, Typography } from "@/components/Materials";
-import { div } from "framer-motion/client";
 import Link from "next/link";
 import { Fragment } from "react";
 
