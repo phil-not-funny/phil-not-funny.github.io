@@ -9,7 +9,7 @@ const WelcomeMessage: React.FC = () => {
     <Fragment>
       <Typography
         variant="h1"
-        className="relative w-[max-content] font-mono text-xl sm:text-2xl before:absolute before:inset-0 before:animate-typewriter before:bg-zinc-900 after:absolute after:inset-0 after:ml-1 after:w-[0.125em] after:animate-caret after:bg-neutral-300"
+        className="relative w-[max-content] font-mono text-xl before:absolute before:inset-0 before:animate-typewriter before:bg-zinc-900 after:absolute after:inset-0 after:ml-1 after:w-[0.125em] after:animate-caret after:bg-neutral-300 sm:text-2xl"
       >
         <span className="text-pink-700">Proxreal</span> by Philip Schrenk
       </Typography>
@@ -22,7 +22,7 @@ const WelcomeMessage: React.FC = () => {
       >
         <Typography
           variant="lead"
-          className="mt-3 text-sm sm:text-lg max-w-screen-md text-center text-neutral-300"
+          className="mt-3 max-w-screen-md text-center text-sm text-neutral-300 sm:text-lg"
         >
           This portfolio website contains information about my projects, linked
           accounts and contact information.
