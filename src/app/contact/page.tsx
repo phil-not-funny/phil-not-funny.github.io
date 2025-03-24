@@ -29,6 +29,7 @@ export default function Contact() {
           <ContactListItem
             title="E-Mail"
             username="phil-not-funny@outlook.com"
+            href="mailto:phil-not-funny@outlook.com"
             companyBadge="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1101px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png"
           />
         </div>
