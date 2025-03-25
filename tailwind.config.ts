@@ -46,4 +46,8 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    "hover:text-green-600",
+    "hover:text-red-600",
+  ],
 } satisfies Config;
