@@ -41,8 +41,13 @@ const ProjectDetailed: React.FC<ProjectDetailedProps> = ({ project }) => {
             )}
             companyBadge="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
             className="flex justify-center"
-          ></ContactListItem>
+          />
         </div>
+      )}
+      {project.extendedYap && (
+        <Typography variant="paragraph" className="max-w-3xl text-center">
+          {project.extendedYap}
+        </Typography>
       )}
     </WithPageHead>
   );

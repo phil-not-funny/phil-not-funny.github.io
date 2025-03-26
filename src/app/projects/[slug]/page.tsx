@@ -8,8 +8,8 @@ interface ProjectPageProps {
   };
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
   const project: Project | undefined = projects.find((p) => p.slug === slug);
 
   if (!project) {
