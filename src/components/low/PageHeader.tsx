@@ -4,8 +4,10 @@ import { PropsWithClassNameAndChildren } from "@/types/ComponentTypes";
 import { Typography } from "@material-tailwind/react";
 import React, { ReactNode } from "react";
 
-
-const PageHeader: React.FC<PropsWithClassNameAndChildren> = ({ children, className }) => {
+const PageHeader: React.FC<PropsWithClassNameAndChildren> = ({
+  children,
+  className,
+}) => {
   return (
     <Typography
       variant="h1"
