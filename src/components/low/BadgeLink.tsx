@@ -36,7 +36,7 @@ const BadgeLink: React.FC<BadgeLinkProps> = ({
             >
               {title}
             </Typography>
-            <Typography variant="paragraph">{yap}</Typography>
+            <Typography variant="paragraph" className="leading-none py-3 sm:py-0">{yap}</Typography>
           </div>
         </div>
       </MotionDiv>
