@@ -11,7 +11,7 @@ const PageHeader: React.FC<PropsWithClassNameAndChildren> = ({
   return (
     <Typography
       variant="h1"
-      className={`relative mb-5 h-[max-content] w-[max-content] font-mono text-xl sm:text-3xl uppercase tracking-widest after:absolute after:inset-0 after:left-full after:ml-1 after:w-[0.125em] after:animate-caret_static after:bg-pink-600 ${className}`}
+      className={`relative mb-5 h-[max-content] text-center font-mono text-xl uppercase tracking-widest sm:w-[max-content] sm:text-left sm:text-3xl sm:after:absolute sm:after:inset-0 sm:after:left-full sm:after:ml-1 sm:after:w-[0.125em] sm:after:animate-caret_static sm:after:bg-pink-600 ${className}`}
     >
       {children}
     </Typography>

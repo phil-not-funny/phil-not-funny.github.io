@@ -8,7 +8,7 @@ export default function Projects() {
     <WithPageHead>
       <PageHeader>Projects</PageHeader>
       <Typography variant="lead" className="text-center">
-        Here, you&apos;ll find a showcase of all my mayor projects.
+        Here, you&apos;ll find a showcase of all my major projects.
       </Typography>
       <ProjectList className="mt-16" />
     </WithPageHead>

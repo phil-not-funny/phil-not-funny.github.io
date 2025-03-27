@@ -10,6 +10,7 @@ export type Project = {
   designatedClassName?: string;  //classes need to be added to safelist here
   repositoryUrl?: string;
   versions?: ProjectVersion[];
+  repositoryReleases?: boolean;
 };
 
 export enum ProjectType {

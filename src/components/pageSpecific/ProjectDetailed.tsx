@@ -53,19 +53,28 @@ const ProjectDetailed: React.FC<ProjectDetailedProps> = ({ project }) => {
           </div>
         )}
         {project.versions?.length && (
-          <div className="max-w-3xl w-full">
+          <div className="w-full max-w-3xl">
             <SectionHeading>Versions</SectionHeading>
-            <div className="mt-4 grid grid-rows-1 md:grid-rows-3 gap-3">
+            <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3 items-center ">
               {project.versions.map((version, index) => (
-                <BadgeDownload version={version} span={index === 0} key={index} />
+                <BadgeDownload
+                  version={version}
+                  span={index === 0}
+                  key={index}
+                />
               ))}
             </div>
+            {project.repositoryReleases && (
+              <Typography variant="small" className="text-center uppercase mt-4 italic">
+                More versions on Github
+              </Typography>
+            )}
           </div>
         )}
         {project.gallery?.length && (
           <div>
             <SectionHeading>Gallery</SectionHeading>
-            <Carousel loop autoplay className="mt-4 rounded-xl">
+            <Carousel loop autoplay className="mt-4 w-auto max-h-[70vh] rounded-xl">
               {project.gallery.map((galleryImage, index) => (
                 <Image
                   key={index}

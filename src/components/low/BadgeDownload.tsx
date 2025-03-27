@@ -23,7 +23,7 @@ const BadgeDownload: React.FC<BadgeDownloadProps> = ({ version, span }) => {
       key={version.download ? version.version : undefined}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className={`group relative mt-4 flex w-full items-center bg-neutral-800 ${span ? "col-span-3 rounded-lg" : "rounded-full"}`}
+      className={`group relative mt-4 flex w-full items-center bg-neutral-800 ${span ? (!version.download ? "col-span-3" : "" + "rounded-lg") : "rounded-full"}`}
     >
       <div className="flex w-full flex-row items-center gap-2 p-1">
         <ArrowDownCircleIcon className="h-11 w-11 rounded-full text-neutral-300 group-hover:!text-pink-600" />
@@ -38,9 +38,7 @@ const BadgeDownload: React.FC<BadgeDownloadProps> = ({ version, span }) => {
               <span className="font-bold tracking-wide">{version.version}</span>
               -
               <CalendarIcon className="h-4 w-4" />
-              <Typography variant="small">
-                {version.releaseDate}
-              </Typography>
+              <Typography variant="small">{version.releaseDate}</Typography>
             </div>
             {span ? (
               <div className="flex flex-row items-center gap-1 text-pink-600">
@@ -53,7 +51,12 @@ const BadgeDownload: React.FC<BadgeDownloadProps> = ({ version, span }) => {
             <ul>
               {version.changes?.map((change) => (
                 <li key={change.toLowerCase()}>
-                  <Typography variant="small" className="flex flex-row items-center"><ChevronRightIcon className="h-3 w-3" /> {change}</Typography>
+                  <Typography
+                    variant="small"
+                    className="flex flex-row items-center"
+                  >
+                    <ChevronRightIcon className="h-3 w-3" /> {change}
+                  </Typography>
                 </li>
               ))}
             </ul>
@@ -67,7 +70,7 @@ const BadgeDownload: React.FC<BadgeDownloadProps> = ({ version, span }) => {
     <Link
       key={version.version}
       href={version.download}
-      className={span ? "col-span-3" : "col-span-1"}
+      className={span ? "md:col-span-3" : ""}
       download={true}
     >
       {children}

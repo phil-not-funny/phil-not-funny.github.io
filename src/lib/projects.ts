@@ -26,6 +26,57 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "lifesmpmod",
+    title: "Life SMP Mod",
+    cover: {
+      src: "/images/projects/minecraft_logo.png",
+      alt: "Minecraft Logo",
+      renderedHeight: 300,
+      renderedWidth: 300,
+    },
+    type: ProjectType.GAME,
+    yap: "This fabric serverside mod brings the unique gameplay mechanics of Grian's popular 'Life SMP' to you and your friends.",
+    repositoryUrl: "https://github.com/phil-not-funny/lifesmp-mod",
+    repositoryReleases: true,
+    versions: [
+      {
+        releaseDate: new Date(2024, 12, 5).toLocaleDateString(),
+        version: "1.3.7-1.21.4",
+        download:
+          "https://github.com/phil-not-funny/lifesmp-mod/releases/download/v1.3.7-1.21.4/lifeanarchy-v1.3.7-1.21.4.jar",
+        changes: ["Added Custom TNT Recipe from the Original Series"],
+      },
+      {
+        releaseDate: new Date(2024, 12, 5).toLocaleDateString(),
+        version: "1.3.6",
+        download:
+          "https://github.com/phil-not-funny/lifesmp-mod/releases/download/v1.3.6/lifeanarchy-v1.3.6.jar",
+        changes: [
+          "Added StealLife Command",
+          "Added Custom Boogey Fail Penalty",
+          "Added Advanced Killer Detection",
+        ],
+      },
+      {
+        releaseDate: new Date(2024, 12, 5).toLocaleDateString(),
+        version: "1.3.5",
+        download:
+          "https://github.com/phil-not-funny/lifesmp-mod/releases/download/v1.3.5/lifeanarchy-v1.3.5.jar",
+        changes: [
+          "Added Advanced Spawn Protection",
+          "Fixed GiveLife on Dead Players",
+        ],
+      },
+      {
+        releaseDate: new Date(2024, 12, 4).toLocaleDateString(),
+        version: "1.3.4",
+        download:
+          "https://github.com/phil-not-funny/lifesmp-mod/releases/download/v1.3.4/lifeanarchy-v1.3.4.jar",
+        changes: ["Update Version in Gradle Properties"],
+      },
+    ],
+  },
+  {
     slug: "badgame2",
     title: "Bad Game 2 (Unity)",
     yap: "Bad Game 2 is a Unity Game that I made because I was bored. It's a 3D Platformer with movement and abilities written from scratch.",
@@ -69,10 +120,10 @@ export const projects: Project[] = [
         changes: [
           "Added Levels 10 onwards",
           "Fixed a lot of major Bugs",
-          "Added Pause Menu"
+          "Added Pause Menu",
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     slug: "proxnotes",
@@ -85,6 +136,22 @@ export const projects: Project[] = [
     },
     type: ProjectType.APP,
     yap: "ProxNotes is a simple note-taking app that I made for my personal use. It's a client-side only app that i made using Java.",
-    extendedYap: "One time I was bored and I wanted to make a note-taking app. So I did. It's written in Java and uses JavaFX for the GUI. The app saves notes to a local file using Java Serializable and can load them back in. It can also load up on startup if you wish to do so.",
+    extendedYap:
+      "One time I was bored and I wanted to make a note-taking app. So I did. It's written in Java and uses JavaFX for the GUI. The app saves notes to a local file using Java Serializable and can load them back in. It can also load up on startup if you wish to do so.",
+  },
+  {
+    slug: "arcadeflierbot",
+    title: "Arcade Flier Bot (Discord)",
+    cover: {
+      src: "/images/projects/arcade.flyer_logo.webp",
+      alt: "Arcade Flier Logo",
+      renderedHeight: 300,
+      renderedWidth: 300,
+    },
+    type: ProjectType.APP,
+    yap: "Arcade Flyer Bot is a Discord Bot that I made just for fun. It's a simple all-purpose bot that focuses on fun.",
+    extendedYap: "Arcade Flier features many commands, including a magic 8-ball, and -most importantly- an arcade command.",
+    repositoryUrl: "https://github.com/phil-not-funny/arcadeflier_dcbot",
+    
   }
 ];
