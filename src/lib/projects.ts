@@ -61,6 +61,18 @@ export const projects: Project[] = [
         renderedWidth: 1024,
       },
     ],
+    versions: [
+      {
+        version: "0.1.2",
+        releaseDate: new Date(2024, 9, 2).toLocaleDateString(),
+        download: "/downloads/badgame2_v0.1.2.zip",
+        changes: [
+          "Added Levels 10 onwards",
+          "Fixed some Bugs",
+          "Added Pause Menu"
+        ],
+      }
+    ]
   },
   {
     slug: "proxnotes",

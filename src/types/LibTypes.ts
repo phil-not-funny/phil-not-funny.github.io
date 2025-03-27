@@ -18,7 +18,7 @@ export enum ProjectType {
   GAME = "Game | Mod",
 }
 
-type ProjectVersion = {
+export type ProjectVersion = {
   version: string;
   releaseDate: string;
   changes?: string[];

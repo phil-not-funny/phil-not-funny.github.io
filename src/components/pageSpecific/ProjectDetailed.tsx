@@ -9,6 +9,8 @@ import { MotionDiv } from "../Motion";
 import { PropsWithChildren } from "react";
 import Link from "next/link";
 import BadgeLink from "../low/BadgeLink";
+import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
+import BadgeDownload from "../low/BadgeDownload";
 
 interface ProjectDetailedProps {
   project: Project;
@@ -54,15 +56,11 @@ const ProjectDetailed: React.FC<ProjectDetailedProps> = ({ project }) => {
           </div>
         )}
         {project.versions?.length && (
-          <div>
+          <div className="max-w-3xl w-full">
             <SectionHeading>Versions</SectionHeading>
-            <div className="mt-4">
+            <div className="mt-4 grid grid-rows-1 md:grid-rows-3 gap-3">
               {project.versions.map((version, index) => (
-                <MotionDiv
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="flex w-full flex-row bg-neutral-800"
-                ></MotionDiv>
+                <BadgeDownload version={version} span={index === 0} key={index} />
               ))}
             </div>
           </div>
