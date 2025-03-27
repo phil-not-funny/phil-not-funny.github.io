@@ -68,7 +68,7 @@ export const projects: Project[] = [
         download: "/downloads/badgame2_v0.1.2.zip",
         changes: [
           "Added Levels 10 onwards",
-          "Fixed some Bugs",
+          "Fixed a lot of major Bugs",
           "Added Pause Menu"
         ],
       }

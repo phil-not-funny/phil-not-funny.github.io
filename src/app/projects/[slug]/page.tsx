@@ -3,9 +3,7 @@ import { projects } from "@/lib/projects";
 import { Project } from "@/types/LibTypes";
 
 interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<{slug: string}>;
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {

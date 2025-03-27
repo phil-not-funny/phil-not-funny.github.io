@@ -7,7 +7,6 @@ import Image from "next/image";
 import { Typography } from "@/components/Materials";
 import Link from "next/link";
 import { MotionDiv } from "../Motion";
-import { Fragment } from "react";
 
 interface ProjectListItemProps {
   project: Project;

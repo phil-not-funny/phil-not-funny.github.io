@@ -3,13 +3,10 @@
 import { Project } from "@/types/LibTypes";
 import { WithPageHead } from "../top/PageHead";
 import PageHeader from "../low/PageHeader";
-import { Typography, Carousel, Avatar } from "../Materials";
+import { Typography, Carousel } from "../Materials";
 import Image from "next/image";
-import { MotionDiv } from "../Motion";
 import { PropsWithChildren } from "react";
-import Link from "next/link";
 import BadgeLink from "../low/BadgeLink";
-import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
 import BadgeDownload from "../low/BadgeDownload";
 
 interface ProjectDetailedProps {
