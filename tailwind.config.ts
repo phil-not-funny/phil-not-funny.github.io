@@ -5,6 +5,7 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./**/@material-tailwind/**/*.{html,js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     extend: {
@@ -46,4 +47,8 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    "hover:text-green-600",
+    "hover:text-red-600",
+  ],
 } satisfies Config;

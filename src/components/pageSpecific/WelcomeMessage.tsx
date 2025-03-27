@@ -9,7 +9,7 @@ const WelcomeMessage: React.FC = () => {
     <Fragment>
       <Typography
         variant="h1"
-        className="relative w-[max-content] font-mono text-xl before:absolute before:inset-0 before:animate-typewriter before:bg-zinc-900 after:absolute after:inset-0 after:ml-1 after:w-[0.125em] after:animate-caret after:bg-neutral-300 sm:text-2xl"
+        className="relative w-[max-content] font-mono text-xl before:absolute before:inset-0 before:animate-typewriter before:bg-zinc-900 after:absolute after:inset-0 after:ml-1 after:w-[0.125em] after:animate-caret after:bg-neutral-300 sm:text-2xl lg:text-3xl"
       >
         <span className="text-pink-700">Proxreal</span> by Philip Schrenk
       </Typography>

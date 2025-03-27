@@ -20,10 +20,11 @@ const NavList: React.FC = () => {
       <Link href="/about" className="text-sm font-medium hover:text-pink-600">
         <ListItem className="flex items-center gap-2 py-2 pr-4">About</ListItem>
       </Link>
+      <Link href="/projects" className="text-sm font-medium hover:text-pink-600">
+        <ListItem className="flex items-center gap-2 py-2 pr-4">Projects</ListItem>
+      </Link>
       <Link href="/contact" className="text-sm font-medium hover:text-pink-600">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact
-        </ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">Contact</ListItem>
       </Link>
     </List>
   );
@@ -40,11 +41,11 @@ const NavbarWithMegaMenu: React.FC = () => {
   }, []);
 
   return (
-    <Navbar className="w-full !rounded-none border-b border-zinc-900 border-b-zinc-800 bg-zinc-900 px-4 py-2 !shadow-none">
+    <Navbar className="w-full !rounded-none border-b border-zinc-900 border-b-zinc-800 bg-zinc-900 px-4 py-2 !shadow-none !max-w-none">
       <div className="relative mx-auto flex max-w-screen-xl items-center justify-between lg:justify-center">
         <Link
           href="/"
-          className="lg:absolute lg:left-0 lg:top-0 leading-8 mr-4 cursor-pointer py-1.5 font-semibold transition-all duration-75 ease-in-out hover:!text-xl hover:uppercase hover:text-pink-600 lg:ml-2"
+          className="mr-4 cursor-pointer py-1.5 font-semibold leading-8 transition-all duration-75 ease-in-out hover:!text-xl hover:uppercase hover:text-pink-600 lg:absolute lg:left-0 lg:top-0 lg:ml-2"
         >
           Proxreal
         </Link>
@@ -54,7 +55,7 @@ const NavbarWithMegaMenu: React.FC = () => {
         <IconButton
           variant="text"
           color="blue-gray"
-          className="lg:hidden flex justify-center items-center"
+          className="flex items-center justify-center lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
