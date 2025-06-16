@@ -23,6 +23,20 @@ export const projects: Project[] = [
         renderedHeight: 720,
         renderedWidth: 1024,
       },
+      {
+        alt: "TripTales 2",
+        caption: "Image2",
+        src: "/images/projects/triptales2.png",
+        renderedHeight: 720,
+        renderedWidth: 1024,
+      },
+      {
+        alt: "TripTales 3",
+        caption: "Image3",
+        src: "/images/projects/triptales3.png",
+        renderedHeight: 720,
+        renderedWidth: 1024,
+      },
     ],
   },
   {
