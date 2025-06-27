@@ -49,7 +49,7 @@ export default function Contact() {
             username="Philip Schrenk"
             companyBadge="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png"
             href="https://www.linkedin.com/in/philipschrenk75/"
-            avatar="https://media.licdn.com/dms/image/v2/D4E03AQFFR9fGzF1BUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706184704294?e=1747872000&v=beta&t=V2f1qzzdcAk3-zN8fA-_lnnddoLypmMtFO8ZlM0tG50"
+            avatar="https://media.licdn.com/dms/image/v2/D4E03AQFFR9fGzF1BUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706184704294?e=1756339200&v=beta&t=nrFoi5jXHyXc6Ma34-O22xWHeNUZoDPZ5Q-frUp6Qn8"
           />
           <ContactListItem
             title="Stack Overflow"

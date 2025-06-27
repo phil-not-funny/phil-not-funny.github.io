@@ -2,6 +2,20 @@ import { Project, ProjectType } from "@/types/LibTypes";
 
 export const projects: Project[] = [
   {
+    slug: "diploma",
+    title: "IoE Videocall - Diploma",
+    yap: "This project is my diploma thesis i did with 3 others at the HTL Spengergasse in Vienna in collad with the company Institute of Entrepreneurship.",
+    extendedYap:
+      "We worked on an AWS Chime based video call system with an additional transcription feature. Furthermore, we implemented a waiting room for guests to wait until a host accepts their participation.",
+    type: ProjectType.WEB,
+    cover: {
+      src: "/images/projects/ioe_logo.png",
+      alt: "Institute of Entrepreneurship Logo",
+      renderedHeight: 300,
+      renderedWidth: 300,
+    },
+  },
+  {
     slug: "triptales",
     title: "TripTales",
     yap: "TripTales is a Social Media Platform for Travelers. It allows users to share their travel experiences with others, and to discover new places to visit.",
@@ -164,8 +178,8 @@ export const projects: Project[] = [
     },
     type: ProjectType.APP,
     yap: "Arcade Flyer Bot is a Discord Bot that I made just for fun. It's a simple all-purpose bot that focuses on fun.",
-    extendedYap: "Arcade Flier features many commands, including a magic 8-ball, and -most importantly- an arcade command.",
+    extendedYap:
+      "Arcade Flier features many commands, including a magic 8-ball, and -most importantly- an arcade command.",
     repositoryUrl: "https://github.com/phil-not-funny/arcadeflier_dcbot",
-    
-  }
+  },
 ];
