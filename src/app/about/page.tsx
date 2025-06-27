@@ -11,7 +11,7 @@ import {
 } from "@/components/pageSpecific/AboutReadSection";
 import StyledScrollDownSection from "@/components/pageSpecific/StyledScrollDownSection";
 import { Button, List } from "@/components/Materials";
-import { ArrowDownTrayIcon, EyeDropperIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { EyeIcon } from "@heroicons/react/24/outline";
 
 export default function About() {
   return (
