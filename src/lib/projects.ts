@@ -14,6 +14,13 @@ export const projects: Project[] = [
       renderedHeight: 300,
       renderedWidth: 300,
     },
+    versions: [
+      {
+        version: "1.0.0",
+        releaseDate: new Date(2025, 6, 26).toLocaleDateString(),
+        download: "/downloads/IoE_Videocall.pdf",
+      }
+    ]
   },
   {
     slug: "triptales",

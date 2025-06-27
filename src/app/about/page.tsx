@@ -10,7 +10,8 @@ import {
   AboutReadSectionImageBlobs,
 } from "@/components/pageSpecific/AboutReadSection";
 import StyledScrollDownSection from "@/components/pageSpecific/StyledScrollDownSection";
-import { List } from "@/components/Materials";
+import { Button, List } from "@/components/Materials";
+import { ArrowDownTrayIcon, EyeDropperIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 export default function About() {
   return (
@@ -19,11 +20,9 @@ export default function About() {
       <PageHead className="mt-0 justify-center">
         <StyledScrollDownSection
           title="About"
-          yap={
-            `This page provides insight into who I am as an individual, while
+          yap={`This page provides insight into who I am as an individual, while
               also showcasing functionality and design of this website and
-              my entirely fictional franchise and company, "Proxreal".`
-          }
+              my entirely fictional franchise and company, "Proxreal".`}
         />
       </PageHead>
       <List className="pb-12">
@@ -179,6 +178,42 @@ export default function About() {
                   additionalHref="https://motion.dev"
                 />
               </div>
+            </div>
+          }
+        />
+        <AboutReadSection
+          title={
+            <Fragment>
+              My <span className="uppercase text-pink-600">Diploma Thesis</span>{" "}
+              (in german)
+            </Fragment>
+          }
+          paragraph={
+            <Fragment>
+              In 2025, I completed my diploma thesis at the{" "}
+              <a
+                target="_blank"
+                className="text-red-400 hover:underline"
+                href="https://www.spengergasse.at"
+              >
+                HTL Spengergasse
+              </a>{" "}
+              which was all about creating a videocall webapp using AWS Chime
+              and AWS Lambda
+              <br /> that would transcribe and summarize the meeting.
+              <br />
+              It was a group project with 3 other developers, but I basically
+              wrote all of the frontend code myself, using Typescript and
+              Nextjs.
+            </Fragment>
+          }
+          extra={
+            <div className="absolute bottom-0 right-0 flex w-full translate-y-1/2 justify-center">
+              <a href="/downloads/IoE_Videocall.pdf" target="_blank">
+                <Button className="mt-2 flex items-center gap-3 bg-pink-700 p-3">
+                  <EyeIcon className="h-5 w-5" /> View the paper
+                </Button>
+              </a>
             </div>
           }
         />
